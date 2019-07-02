@@ -1,0 +1,210 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+html, body {
+width: 100%;
+height: 100%;
+}
+
+#inner-steps {
+    display: flex;
+    justify-content: center;
+}
+
+.actual-logo {
+    font-family: 'Lato';
+    text-transform: uppercase;
+}
+
+
+.step {
+    display: flex;
+    width: 25%;
+    align-items: baseline;
+}
+
+.number {
+    padding: 1em;
+}
+
+
+#navigation-master {
+    display: flex;
+    align-items: center;
+    /* height: 15%; */
+}
+
+/* Stuff */
+.nav-logo {
+    flex: .6;
+}
+
+
+.master-links-container {
+    flex: 2;
+}
+
+.master-links li{
+    display: inline-flex;
+    /* display: inline-block; */
+    padding: 20px;
+    font-family: 'Lato';
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: 800;
+}
+
+.nav-logos li {
+    display: inline-flex;
+}
+
+.nav-logos {
+    flex: .17;
+}
+
+
+
+/* Header */
+#entire-header {
+background-image: linear-gradient(rgba(24, 16, 16, 0.5), rgba(39, 30, 30, 0.5)), url('../images/header.jpeg');
+    min-height: 90%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inner-header {
+    text-align: center;
+    flex: .7;
+}
+
+#inner-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.header-statement {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.header-statement p {
+    color: white;
+    font-family: 'Lato';
+    font-size: .7em;
+    flex: .8;
+    font-weight: 100;
+    line-height: 22px;
+    letter-spacing: .8px;
+}
+
+#inner-header {
+    min-height: 100%;
+}
+
+
+.header-tagline h1{
+    font-family: 'Lato';
+    color: white;
+    font-size: 2.8em;
+    font-weight: 800;
+}
+
+
+.trusted {
+    color: orange;
+}
+
+#button-1 {
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: solid 2px white;
+    border-radius: 2px;
+    flex: 2;
+}
+
+.header-button {
+    padding-top: 20px;
+}
+
+
+/* Rec Images */
+
+.rec-image {
+    width: 200px;
+    padding: 20px;
+}
+
+.master-recs li {
+    display: inline-block;
+}
+
+#recs {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(228, 228, 228);
+}
+
+
+
+/* 3 Ways To Make It Successful */
+#how-we-work {
+    text-align: center;
+    padding: 2em;
+}
+
+
+
+
+
+@media screen and (max-width: 440px){
+    #navigation-master {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    .master-links li {
+        font-size: .4em;
+    }
+    .master-links {
+        display: inline-block;
+    }
+
+    .rec-image {
+        width: 110px;
+    }
+    .header-statement p {
+        font-size: .6em;
+        line-height: 14px;
+    }
+
+    .header-tagline h1 {
+        font-size: 1.2em;
+    }
+    #inner-header {
+        flex: 1;
+    }
+}
+
+
+/*Smallest it can get is 405px and biggest it can get is 455px*/
+@media (min-width: 438px) and (max-width: 735px) {
+
+ .master-links li {
+     font-size: .4em;
+     padding: .8em;
+ }
+}
